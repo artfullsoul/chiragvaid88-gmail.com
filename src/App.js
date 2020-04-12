@@ -4,6 +4,8 @@ import style from './App.css';
 import backgroundImage from "./images/background.jpg";
 import aboutImage from "./images/about.jpg";
 import image2 from "./images/image2.jpg";
+import homedelievery from "./images/homeDelivery.png"
+import PWAGram from "./images/PWAGram.png"
 import tindog from "./images/tindogPicture.png";
 import todolist from "./images/toDoListPicture.png";
 import simonGamePicture from "./images/simonGamePicture.png";
@@ -111,12 +113,13 @@ function App() {
 
       <br/>
       <img src={image2} ></img>
-      <p>Hi,I am Chirag Vaid, I live at Dehradun.Currently I am persuing my Btech. degree in Computer Science from UPES.Recently I have developed my intrest in Web Development and completed some Full Stack development certification.So, I am a MERN Stack developer.</p>
+      <p>Hi,I am Chirag Vaid, I live at Dehradun.Currently I am persuing my Btech. degree in Computer Science from UPES.Recently I have developed my interest in Web Development and completed some Full Stack development certification in MERN Stack development. From my childhood I was always fascinated by technologies especially when making my searches on google browser or while working on windows and always wanted to be a of the big names out in the market to see how things works.</p>
     </div>
     <div className="midsec-certification" id="midsec-certification">
       { scrolltop >= 700 ?<h1 className="all-h1-heading">My Certification</h1> :<h1 >My Certification</h1>}
       <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-121ba669-96c0-43b1-97d4-d68668c4fe83.jpg?v=1581521747000"></img>
       <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-404ba09e-f4f4-4b87-a205-8b8c337f7e19.jpg?v=1585305200000"></img>
+      <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-82bcb487-86aa-4026-a5ac-99c57aa5062a.jpg?v=1586648199000"></img>
     </div>
 
 
@@ -131,6 +134,10 @@ function App() {
     </div>
     <div className="my-work">
       {scrolltop >= 2700 ? <h1 className="all-h1-heading">My Personal Projects....</h1> : <h1 >My Personal Projects....</h1>}
+      <a href="https://frozen-bastion-88688.herokuapp.com/"><img className="project-image" src={homedelievery}></img></a>
+      <p>What's the point to learn if you can't help your society in difficult times. Here I made this app during Covid-19(Corona) lockdown to help the people of my state get the number and address of the stores appointed by Govt. to provide the basic requirements. The app was designed so that the user can directly contact the store by clicking on the call button and placing the order over call to prevent people from going out and saving them from getting infected.</p>
+      <a href="https://pwagram-47bee.web.app/"><img className="project-image" src={PWAGram}></img></a>
+      <p>This project was part of my journey to turn my websites to a native app. Do you know that the average download recorded of apps from play and app store is 0% and why to invest your time in developing an additional app for both the stores while the web has the power to do it all by showing push messages to your homescreen and many more simillar features to the mobile apps.</p>
       <a href="https://tindogbychirag.netlify.com/" target="_blank">       <img className="project-image" src={tindog}></img></a>
       <p>Well you all are familliar with the modern dating app "Tinder" here I introduce a clone app for dog meeting named <a href="https://tindogbychirag.netlify.com/" target="_blank">"Tindog"</a></p>
       <a href="https://glacial-atoll-73110.herokuapp.com/" target="_blank"><img className="project-image" src={todolist}></img></a>

@@ -222,8 +222,8 @@ font-size: 2.6vw;
  animation-direction: reverse;
 }
 @keyframes welcome{
-  from {opacity: 0%;color:white;height: 0;}
-  to {opacity: 100%;color:white;height: 6vw;}
+  from {opacity: 0;color:white;height: 0;}
+  to {opacity: 1;color:white;height: 6vw;}
 }
 /* INTRO TEXT <P> */
 .image-content-p{
