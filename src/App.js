@@ -113,7 +113,7 @@ function App() {
 
       <br/>
       <img src={image2} ></img>
-      <p>Hi,I am Chirag Vaid, I live at Dehradun.Currently I am persuing my Btech. degree in Computer Science from UPES.Recently I have developed my interest in Web Development and completed some Full Stack development certification in MERN Stack development. From my childhood I was always fascinated by technologies especially when making my searches on google browser or while working on windows and always wanted to be a of the big names out in the market to see how things works.</p>
+      <p>Hi,I am Chirag Vaid, I live at Dehradun.Currently I am persuing my Btech. degree in Computer Science from UPES.Recently I have developed my interest in Web Development and completed some Full Stack development certification in MERN Stack development. From my childhood I was always fascinated by technologies especially when making my searches on google browser or while working on windows and always wanted to be a part of the big names out in the market to see how things works.</p>
     </div>
     <div className="midsec-certification" id="midsec-certification">
       { scrolltop >= 700 ?<h1 className="all-h1-heading">My Certification</h1> :<h1 >My Certification</h1>}
