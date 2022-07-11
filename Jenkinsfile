@@ -19,15 +19,15 @@ pipeline
 
         stage("build")
         {
-            when //This block is used to execute the stage only when it specifies certain listed condition 
-            {
-                expression 
-                {
-                    // BRANCH_NAME -> Is a default env variable that resturns current branch name
-                    // to fin more go to "env-vars.html" inside your running jenkins server link
-                    // BRANCH_NAME == 'master' && CODE_CHANGES == true
-                }
-            }
+            // when //This block is used to execute the stage only when it specifies certain listed condition 
+            // {
+            //     expression 
+            //     {
+            //         // BRANCH_NAME -> Is a default env variable that resturns current branch name
+            //         // to fin more go to "env-vars.html" inside your running jenkins server link
+            //         // BRANCH_NAME == 'master' && CODE_CHANGES == true
+            //     }
+            // }
             steps
             {
                 // sh "npm install"
