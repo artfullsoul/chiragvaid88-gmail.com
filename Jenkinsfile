@@ -68,20 +68,20 @@ pipeline
             }
         }
     }
-    post 
-    {
+    // post 
+    // {
 
-        always {
-            //This code will always execute be upper code results in success or failure
-        }
+    //     always {
+    //         //This code will always execute be upper code results in success or failure
+    //     }
 
-        failure {
-            //Code Executes upon Failure of upper code
-        }
+    //     failure {
+    //         //Code Executes upon Failure of upper code
+    //     }
 
-        success {
-            //Code Executes upon Success of upper code
+    //     success {
+    //         //Code Executes upon Success of upper code
 
-        }
-    }
+    //     }
+    // }
 }
