@@ -1,13 +1,13 @@
-CODE_CHANGES = getGitChanges()
+// CODE_CHANGES = getGitChanges()
 pipeline 
 {
 
     agent any
-    enviroment // DECLARE ALL ENVIROMENT VARIABLES HERE
-    {
-        NEW_VERSION = '1.0.0'
-        // SERVER_CERDENTIALS = credentials("Id-Given-To-Credential-In-Jenkins")
-    }
+    // enviroment // DECLARE ALL ENVIROMENT VARIABLES HERE
+    // {
+    //     NEW_VERSION = '1.0.0'
+    //     // SERVER_CERDENTIALS = credentials("Id-Given-To-Credential-In-Jenkins")
+    // }
     parameters
     {
         // string(name: "VERSION" , defaultValue: "", description: "Version to deploy to Production")
