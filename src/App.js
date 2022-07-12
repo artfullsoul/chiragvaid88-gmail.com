@@ -122,7 +122,7 @@ const App = () => {
     return(
         <div className='main-cont'>
             {/* NAVABAR */}
-            <div className='nav-bar'>
+            <nav className='nav-bar'>
                 <div className='main-logo'>
                     <p>CV</p>
                 </div>
@@ -149,7 +149,7 @@ const App = () => {
                     animationDuration={0.5}
                     /> 
                 </div>
-            </div>
+            </nav>
             {/* STATIC BACK IMG */}
             <div className='static-back-img'/>
 
@@ -167,16 +167,16 @@ const App = () => {
             <div className='main-sec'>
                 <div className='main-sec-head-cont'>
                     {/* <p className='main-sec-upp-content'><p>HEY THERE</p>, I AM-</p> */}
-                    <p className='main-sec-low-content'><p className='name'>Chirag</p> <p className='cast'>Vaid</p></p>
-                    <p className='profile-tag'>Full Stack <b>Web</b> and <b>App</b> Developer.</p>
+                    <h1 className='main-sec-low-content'><p className='name'>Chirag</p> <p className='cast'>Vaid</p></h1>
+                    <h1 className='profile-tag'>Full Stack <b>Web</b> and <b>App</b> Developer.</h1>
                 </div>
 
                 {/* ABOUT-ME */}
                 <div className='about-me' id="about">
                     <div className='about-me-cont'>
-                        <p className='about-data-head'>About Me</p>
+                        <h1 className='about-data-head'>About Me</h1>
                         <div className="about-data-cont">
-                            <img src={PersonalImage} />
+                            <img src={PersonalImage} alt="Chirag Vaid Image"/>
                             <p>As an enthusiast in Web and App development, I have extensively worked in React and React-Native with backend technologies like Node.js, Express.js, MongoDB and Firebase. I have hands on experience of nearly 2 year in this feild and have successfully delivered projects to market giants like <b>Hero, Vedanta, ZS, BD, Reliance, Cipla and Mankind Pharma</b>. Throughout my journey I have worked upon project like <b>Virtual Events</b>, <b>OTT Platforms</b>, <b>Social Media Websites</b>, <b>E-commerce apps</b> etc.</p>
                         </div>
                     </div>
@@ -184,20 +184,20 @@ const App = () => {
                 
                 {/* TAGLINE */}
                 <div className='tagline-cont'>
-                    <p className='tagline-1'>(noSuccess) ? workHard( ) : keepLearning( )</p>
-                    <p className='tagline-2'>NOT FROM IIT OR NITS BUT STILL BELIEVE IN MY KNOWLEDGE</p>
+                    <h1 className='tagline-1'>(noSuccess) ? workHard( ) : keepLearning( )</h1>
+                    <h2 className='tagline-2'>NOT FROM IIT OR NITS BUT STILL BELIEVE IN MY KNOWLEDGE</h2>
                 </div>
 
                 {/* CERTIFICATIONS */}
                 <div className='certifications' id="certification">
                     <div className='certi-cont'>
-                        <p className='certi-head'>Certification</p>
+                        <h1 className='certi-head'>Certification</h1>
                         <div className='all-certi'>
                             {certificate.map((data,index) => {
                                 return(
                                     <div className='indi-certi-cont' key={index}>
-                                        <img src={data.src}/> 
-                                        <p>{data.tagline}</p>
+                                        <img src={data.src} alt={`${data.tagline} image`}/> 
+                                        <h2>{data.tagline}</h2>
                                     </div>
                                 )
                             })}
@@ -208,7 +208,7 @@ const App = () => {
 
                 {/* SRVICES-TO-OFFER */}
                 <div className='service' id="services">
-                    <p className='service-tag'>Services To Offer</p>
+                    <h1 className='service-tag'>Services To Offer</h1>
                     <div className='service-card-cont'>
                         {/* {services.map((data,index) => {
                             return(
@@ -220,24 +220,24 @@ const App = () => {
                         })} */}
                         
                         <div className='indi-service-card'>
-                            <p className='service-card-head'>Webistes<br/>(Frontend)</p>
-                            <p className='service-card-body'>Services in building Static Websites and helping you to bring your Design/Services to real world.</p>
+                            <h1 className='service-card-head'>Webistes<br/>(Frontend)</h1>
+                            <h2 className='service-card-body'>Services in building Static Websites and helping you to bring your Design/Services to real world.</h2>
                             <p className='service-card-price'>$15 per hour</p>
                             <div className='connect-butt' onClick={() => { window.open("https://wa.me/+919808438969")}}>
                                 <p>Let's Create</p>
                             </div>
                         </div>
                         <div className='indi-service-card'>
-                            <p className='service-card-head'>Websites<br/>(Frontend+Backend)</p>
-                            <p className='service-card-body'>Full support in building Backend + Frontend & adding services to help give a boost to your business.</p>
+                            <h1 className='service-card-head'>Websites<br/>(Frontend+Backend)</h1>
+                            <h2 className='service-card-body'>Full support in building Backend + Frontend & adding services to help give a boost to your business.</h2>
                             <p className='service-card-price'>$25 per hour</p>
                             <div className='connect-butt' onClick={() => { window.open("https://wa.me/+919808438969")}}>
                                 <p>Let's Create</p>
                             </div>
                         </div>
                         <div className='indi-service-card'>
-                            <p className='service-card-head'>Android + IOS Apps<br/>(React Native)</p>
-                            <p className='service-card-body'>Help you build your first Android and IOS app with the required features and publish them to respective stores.</p>
+                            <h1 className='service-card-head'>Android + IOS Apps<br/>(React Native)</h1>
+                            <h2 className='service-card-body'>Help you build your first Android and IOS app with the required features and publish them to respective stores.</h2>
                             <p className='service-card-price'>$45 per hour</p>
                             <div className='connect-butt' onClick={() => { window.open("https://wa.me/+919808438969")}}>
                                 <p>Let's Create</p>
@@ -249,12 +249,12 @@ const App = () => {
                 {/* PROJECTS */}
                 <div className='certifications' id="projects">
                     <div className='certi-cont'>
-                        <p className='certi-head'>Projects</p>
+                        <h1 className='certi-head'>Projects</h1>
                         <div className='all-certi'>
                             {projects.map((data,index) => {
                                 return(
                                     <div className='indi-certi-cont' key={index}>
-                                        <img src={data.src}/> 
+                                        <img src={data.src} alt={`${data.tagline} image`}/> 
                                         <p>{data.tagline}</p>
                                     </div>
                                 )
@@ -264,9 +264,9 @@ const App = () => {
                     </div>
                 </div>
                 {/* FOOTER SECTION */}
-                <div className='footer' id="connect">
-                    <p className='footer-head'>Contact Me</p>
-                    <p className='footer-tag-line'>Would like to connect with me regarding work enquiries? Reach me on the links below.</p>
+                <footer className='footer' id="connect">
+                    <h1 className='footer-head'>Contact Me</h1>
+                    <h2 className='footer-tag-line'>Would like to connect with me regarding work enquiries? Reach me on the links below.</h2>
                     <div className='upper-links-cont'>
                         <p><a href="mailto:chiragvaid88@gmail.com"><i class="far fa-envelope"></i></a>   chiragvaid88@gmail.com</p>
                         <p><a href="tel:+919808438969"><i class="fas fa-phone-alt"></i></a>   +91-9808438969</p>
@@ -279,7 +279,7 @@ const App = () => {
                         <a><i class="fab fa-facebook-square"></i></a>
                     </div>
                     <p className='copyright-line'>All Content Copyright © Chirag Vaid 2020.</p>
-                </div>
+                </footer>
             </div>
         </div>
     )

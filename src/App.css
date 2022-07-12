@@ -127,7 +127,7 @@ body
 {
     color: white;
     display: flex;
-    font-size: 10vw;
+    font-size: 12vw;
     margin: 0;
     letter-spacing: 1vw;
     font-weight: 400;
@@ -283,6 +283,12 @@ body
     border-radius: 10px;
     padding: 1vw;
     box-shadow: 0px 5px 16px grey
+}
+.indi-certi-cont > h2
+{
+    color: grey;
+    text-align: center;
+    font-size: 1.2vw;
 }
 .indi-certi-cont > p
 {
@@ -510,6 +516,9 @@ body
     .all-certi {
         grid-template-columns: 1fr;
         grid-gap: 8vw;
+    }
+    .indi-certi-cont > h2{
+        font-size: 5vw;
     }
     .indi-certi-cont > p{
         font-size: 5vw;
