@@ -176,7 +176,7 @@ const App = () => {
                     <div className='about-me-cont'>
                         <h1 className='about-data-head'>About Me</h1>
                         <div className="about-data-cont">
-                            <img src={PersonalImage} alt="Chirag Vaid Image"/>
+                            <img src={PersonalImage} alt="Chirag Vaid"/>
                             <p>As an enthusiast in Web and App development, I have extensively worked in React and React-Native with backend technologies like Node.js, Express.js, MongoDB and Firebase. I have hands on experience of nearly 2 year in this feild and have successfully delivered projects to market giants like <b>Hero, Vedanta, ZS, BD, Reliance, Cipla and Mankind Pharma</b>. Throughout my journey I have worked upon project like <b>Virtual Events</b>, <b>OTT Platforms</b>, <b>Social Media Websites</b>, <b>E-commerce apps</b> etc.</p>
                         </div>
                     </div>
