@@ -23,6 +23,7 @@ import Project4 from "./images/projects/4.jpeg"
 import Project5 from "./images/projects/5.png"
 import Project6 from "./images/projects/6.png"
 import Project7 from "./images/projects/7.png"
+import Navbar from './Components/Navbar/Navbar';
 
 const App = () => {
     const[scrolltop,scrolltopFunc]= useState(0);
@@ -122,12 +123,11 @@ const App = () => {
     return(
         <div className='main-cont'>
             {/* NAVABAR */}
-            <nav className='nav-bar'>
+            {/* <nav className='nav-bar'>
                 <div className='main-logo'>
                     <p>CV</p>
                 </div>
                 <div className='nav-menu'>
-                    {/* <p>Home</p> */}
                     <p ><a className='nav-links' href='#about'>About</a></p>
                     <p ><a className='nav-links' href='#certification'>Certificate</a></p>
                     <p ><a className='nav-links' href='#services'>Services</a></p>
@@ -149,7 +149,8 @@ const App = () => {
                     animationDuration={0.5}
                     /> 
                 </div>
-            </nav>
+            </nav> */}
+            <Navbar />
             {/* STATIC BACK IMG */}
             <div className='static-back-img'/>
 
