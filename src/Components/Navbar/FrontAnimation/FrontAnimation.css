@@ -1,0 +1,115 @@
+.front-animation
+{
+}
+.left-sec {
+  position: fixed;
+  bottom: 49%;
+  width: 100vw;
+  height: 100vw;
+  background-color: #1b1b1b;
+  transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, -45deg);
+  /* transform-style: preserve-3d; */
+  animation-name: leftSec;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  z-index: +100;
+}
+
+@keyframes leftSec {
+  from {
+    transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, -45deg);
+  }
+  to {
+    transform: translate3d(0px, -220vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, -45deg);
+  }
+}
+.right-sec {
+  position: fixed;
+  top: 50%;
+  width: 100vw;
+  height: 100vw;
+  background-color: #1b1b1b;
+  transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, -45deg);
+  /* transform-style: preserve-3d; */
+  animation-name: rightSec;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  z-index: +100;
+}
+@keyframes rightSec {
+  from {
+    transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, -45deg);
+  }
+  to {
+    transform: translate3d(0px, 220vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, -45deg);
+  }
+}
+.brand-name {
+  font-size: 5vw;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  padding: 0.5vw;
+  background: linear-gradient(90deg, #f8a4d8, #6c63ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Pacifico", cursive;
+  margin: 0;
+  animation-name: brandName;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  z-index: +101;
+}
+
+@keyframes brandName {
+  from {
+    transform: translate3d(0px, 0vw, 0px);
+  }
+  to {
+    transform: translate3d(0px, 220vw, 0px);
+  }
+}
+.main-page-loader {
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  bottom: 5vh;
+  right: 2.5vw;
+  animation-name: vanish;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes vanish {
+  0% {
+    height: 2vw;
+    width: 2vw;
+  }
+  to {
+    height: 0vw;
+    width: 0vw;
+  }
+}
+
+
+@media screen and (max-width: 1000px) 
+{
+    .left-sec {
+        height: 220vw;
+    }
+    .right-sec {
+        height: 220vw;
+    }
+}

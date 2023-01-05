@@ -24,6 +24,7 @@ import Project5 from "./images/projects/5.png"
 import Project6 from "./images/projects/6.png"
 import Project7 from "./images/projects/7.png"
 import Navbar from './Components/Navbar/Navbar';
+import FrontAnimation from './Components/Navbar/FrontAnimation/FrontAnimation';
 
 const App = () => {
     const[scrolltop,scrolltopFunc]= useState(0);
@@ -122,6 +123,7 @@ const App = () => {
     }
     return(
         <div className='main-cont'>
+            <FrontAnimation />
             {/* NAVABAR */}
             {/* <nav className='nav-bar'>
                 <div className='main-logo'>
